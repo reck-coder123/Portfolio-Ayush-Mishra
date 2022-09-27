@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Mishra Portfolio</title>
+    <link rel="icon" href="Screenshot_2022-09-22-20-46-19-14_08626e35eb99698b0717ca70323a2481.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="Screenshot_2022-09-22-20-46-19-14_08626e35eb99698b0717ca70323a2481.jpg" alt="Ayush" class="pic">
+        <nav>
+            
+            <ul class="menuList">
+                <li><img src="pngtree-vector-cancel-icon-png-image_4280018-removebg-preview.png" alt="cancel" id="cancel"></li>
+                
+                <li><a href="#Project">Projects</a></li>
+                <li><a href="#social">About</a></li>
+                <li><a href="#name">Home</a></li>
+            </ul>
+            <img src="depositphotos_232835222-stock-illustration-hamburger-menu-web-icon-orange.jpg" alt="menu" class="menu-icon" id="menu-icon">
+        </nav>
+
+    </div>
+    <div class="name" id="name"><div class="rect"></div><h3><span  style="color:red">Hello There</span> I am </h3><h1><span style="color:red">AYUSH</span> <br> MISHRA</h1><div class="photo-bg"><img src="IMG20220626183212 (1).jpg" alt="AYUSH"></div> </div>
+    <div class="section">
+    <!-- About Me -->
+    <div class="About" id="About"><h1 class="firstword">About </h1><h1>Me</h1><br><br><p>My Name is Ayush Mishra. I am a student in NIT Trichy and passionate about coding and espacially web devlopment in general.
+        I started my coding journey with c++, learning some basic programming stuffs and exploring more. Later I stated web devlopment as well and got attracted towards it. Right now I am a front-end devloper 
+        and I do coding in HTML, CSS and Javascript. I have exploring some basic back-end devlopment also with python flask and mysql. If I talk general about myself, I am from Bhopal Madhaya Pradesh and my hobbies
+        include watching movies and sitcoms, chilling with friends and exploring different stuffs. Also playing and watching sports like cricket and badminton.
+    </p></div></div>
+    <!-- Project -->
+<div class="Project" id="Project"><h1>My <span style="color: red;">Projects</span></h1><br><br><a href="https://github.com/reck-coder123/Alarm.github.io"><div class="alarm"><div><img src="Screenshot 2022-09-25 174437.jpg" alt="alarm" ></div><div class="right-col"><h1>Alarm<span style="color:red"> Clock</span> </h1>
+    <p>An user friendly alarm clock so that you can rule your time.</p><br><h3>Technologies used: HTML, CSS, Javascript</h3></div><br><br></div></a>
+
+<a href="https://github.com/reck-coder123/Tic-Tac-Toe-game.github.io"><div class="tictactoe"><div><img src="Screenshot 2022-09-25 190517.jpg" alt="tic"></div><div class="right-col"><h1>Tic<span style="color:red"> Tac</span> Toe</h1><p>Feeling bore?...Get your friend and play this user friendly tic tac toe game. May the best player win.</p><br>
+    <h3>Technologies used: HTML, CSS, Javascript</h3></div></div></a>
+    <a href="https://github.com/reck-coder123/Ice-creame-maker.github.io"><div class="ice-creme"><div><img src="Screenshot 2022-09-25 191918.jpg" alt="ice"></div><div class="right-col"><h1><span style="color:red"> Ice</span> Creme</h1><p>A simple ice creme maker using HTML, CSS and Javascript.</p><br>
+        <h3>Technologies used: HTML, CSS, Javascript</h3></div></div></a></div>
+        <div class="social" id="social"> <img id="pic-1" src="Screenshot_2022-09-22-20-46-19-14_08626e35eb99698b0717ca70323a2481.jpg" alt="social">
+            <img id="pic-2" src="47-470041_free-download-of-cross-in-circle-icon.png" alt="social">
+            <a href="https://www.instagram.com/sauravmishra205/"><img id="pic-3" src="comdlpng6940458.jpg" alt="social"></a>
+        <a href="https://github.com/reck-coder123"><img id="pic-4" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="social"></a>
+        <a href="https://discord.com/channels/@me"><img id="pic-5" src="Discord-Logo-Circle-1024x1024.png" alt="social"></a>
+        <a href="https://www.linkedin.com/feed/"><img id="pic-6" src="linkedin-color-icon-linkedin-logo-round-11562920732qctvxkrdcd.png" alt="social"></a></div>
+    
+    <script>
+        let pic1=document.getElementById("pic-1");
+        let pic2=document.getElementById("pic-2");
+        let social=document.getElementById("social");
+        pic1.addEventListener("click",function(){
+            pic1.style.display="none";
+            social.style.backgroundColor="grey";
+            
+            for(var i=1; i<6; i++){
+                social.children[i].style.display="block";
+                social.children[i].style.float="left";
+            }
+            
+        })
+        pic2.addEventListener("click",function(){
+            for(var i=0; i<6;i++){
+                social.children[i].style.display="none";
+            }
+            pic1.style.display="block";
+            social.style.backgroundColor="black";
+            
+        })
+        document.getElementById("menu-icon").addEventListener("click",function(){
+            document.querySelector("nav ul").style.display="block";
+        })
+        document.getElementById("cancel").addEventListener("click",function(){
+            document.querySelector("nav ul").style.display="none";
+        })
+
+    </script>
+   
+</body>
+</html>
