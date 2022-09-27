@@ -126,6 +126,9 @@ nav ul li a:hover{
     cursor: pointer;
     margin: 5px;
 }
+#pic-2{
+    display: none;
+}
 .social a{
     display: none;
 }
