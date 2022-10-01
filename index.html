@@ -7,13 +7,14 @@
     <title>Ayush Mishra Portfolio</title>
     <link rel="icon" href="images/Screenshot_2022-09-22-20-46-19-14_08626e35eb99698b0717ca70323a2481.jpg">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="nav">
         <img src="images/Screenshot_2022-09-22-20-46-19-14_08626e35eb99698b0717ca70323a2481.jpg" alt="Ayush" class="pic">
         <nav>
             
-            <ul class="menuList">
+            <ul class="menuList" id="menuList">
                 <li><img src="images/pngtree-vector-cancel-icon-png-image_4280018-removebg-preview.png" alt="cancel" id="cancel"></li>
                 
                 <li><a href="#Project">Projects</a></li>
@@ -24,7 +25,7 @@
         </nav>
 
     </div>
-    <div class="name" id="name"><div class="rect"></div><h3><span  style="color:orange">Hello There</span> I am </h3><h1><span style="color:orange">AYUSH</span> <br> MISHRA</h1><div class="photo-bg"><img src="images/IMG20220626183212 (1).jpg" alt="AYUSH"></div> </div>
+    <div class="name" id="name"><div class="rect"></div><h3><span  style="color:orangered">Hello There</span> I am </h3><h1><span style="color:orangered">AYUSH</span> <br> MISHRA</h1><div class="photo-bg"><img src="images/IMG20220626183212 (1).jpg" alt="AYUSH"></div> </div>
     <div class="section">
     <!-- About Me -->
     <div class="About" id="About"><h1 class="firstword">About </h1><h1>Me</h1><br><br><p>My Name is Ayush Mishra. I am a student in NIT Trichy and passionate about coding and espacially web devlopment in general.
@@ -33,12 +34,12 @@
         include watching movies and sitcoms, chilling with friends and exploring different stuffs. Also playing and watching sports like cricket and badminton.
     </p></div></div>
     <!-- Project -->
-<div class="Project" id="Project"><h1>My <span style="color: orange;">Projects</span></h1><br><br><a href="https://reck-coder123.github.io/Alarm.github.io/"><div class="alarm"><div><img src="images/Screenshot 2022-09-25 174437.jpg" alt="alarm" ></div><div class="right-col"><h1>Alarm<span style="color:orange"> Clock</span> </h1>
+<div class="Project" id="Project"><h1>My <span style="color: orangered;">Projects</span></h1><br><br><a href="https://reck-coder123.github.io/Alarm.github.io/"><div class="alarm"><div><img src="images/Screenshot 2022-09-25 174437.jpg" alt="alarm" ></div><div class="right-col"><h1>Alarm<span style="color:orangered"> Clock</span> </h1>
     <p>An user friendly alarm clock so that you can rule your time.</p><br><h3>Technologies used: HTML, CSS, Javascript</h3></div><br><br></div></a>
 
-<a href="https://reck-coder123.github.io/Tic-Tac-Toe-game.github.io/"><div class="tictactoe"><div><img src="images/Screenshot 2022-09-25 190517.jpg" alt="tic"></div><div class="right-col"><h1>Tic<span style="color:orange"> Tac</span> Toe</h1><p>Feeling bore?...Get your friend and play this user friendly tic tac toe game. May the best player win.</p><br>
+<a href="https://reck-coder123.github.io/Tic-Tac-Toe-game.github.io/"><div class="tictactoe"><div><img src="images/Screenshot 2022-09-25 190517.jpg" alt="tic"></div><div class="right-col"><h1>Tic<span style="color:orangered"> Tac</span> Toe</h1><p>Feeling bore?...Get your friend and play this user friendly tic tac toe game. May the best player win.</p><br>
     <h3>Technologies used: HTML, CSS, Javascript</h3></div></div></a>
-    <a href="https://reck-coder123.github.io/Ice-creame-maker.github.io/"><div class="ice-creme"><div><img src="images/Screenshot 2022-09-25 191918.jpg" alt="ice"></div><div class="right-col"><h1><span style="color:orange"> Ice</span> Creme</h1><p>A simple ice creme maker using HTML, CSS and Javascript.</p><br>
+    <a href="https://reck-coder123.github.io/Ice-creame-maker.github.io/"><div class="ice-creme"><div><img src="images/Screenshot 2022-09-25 191918.jpg" alt="ice"></div><div class="right-col"><h1><span style="color:orangered"> Ice</span> Creme</h1><p>A simple ice creme maker using HTML, CSS and Javascript.</p><br>
         <h3>Technologies used: HTML, CSS, Javascript</h3></div></div></a></div>
         <div class="social" id="social"> <img id="pic-1" src="images/Screenshot_2022-09-22-20-46-19-14_08626e35eb99698b0717ca70323a2481.jpg" alt="social">
             <img id="pic-2" src="images/47-470041_free-download-of-cross-in-circle-icon.png" alt="social">
@@ -70,12 +71,11 @@
             
         })
         document.getElementById("menu-icon").addEventListener("click",function(){
-            document.querySelector("nav ul").style.display="block";
+           document.getElementById("menuList").style.right="300px";
         })
         document.getElementById("cancel").addEventListener("click",function(){
-            document.querySelector("nav ul").style.display="none";
+           document.getElementById("menuList").style.right="0px";
         })
-
     </script>
    
 </body>
