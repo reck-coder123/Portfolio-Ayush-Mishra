@@ -332,6 +332,13 @@ nav ul li a{
 }
 
 }
+@media screen and (max-width:360px) {
+   .Project{
+    position: relative;
+    margin-top: 700px;
+   }
+    
+}
 @media screen and (min-width:768px) and (max-width:900px){
     nav ul{
         width: 40vw;
